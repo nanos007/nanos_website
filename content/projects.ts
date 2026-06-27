@@ -26,7 +26,7 @@ export const consultingProjects: ConsultingProject[] = [
     links: [
       {
         label: "digitalsalt — Configuration Management",
-        url: "https://digitalsalt.de/insight/konfigurationsmanagement/",
+        url: "https://digitalsalt.com/insight/konfigurationsmanagement/",
       },
     ],
   },
@@ -54,7 +54,7 @@ export const consultingProjects: ConsultingProject[] = [
     links: [
       {
         label: "digitalsalt — Earned Value Management",
-        url: "https://en.digitalsalt.de/insight/earned-value-management/",
+        url: "https://digitalsalt.com/en/insight/earned-value-management/",
       },
     ],
   },
@@ -90,7 +90,7 @@ export const aiProjects: AIProject[] = [
     description:
       "Initial AI use case idea that grew into a digital solution built by the Data Science Team at digitalsalt under my leadership for a major shipyard. Automates the identification of Configuration Items.",
     links: [
-      { label: "digitalsalt — CM with AI", url: "https://digitalsalt.de/insight/cm-mit-ki/" },
+      { label: "digitalsalt — CM with AI", url: "https://digitalsalt.com/insight/cm-mit-ki/" },
       {
         label: "AI CI-Identification (PDF)",
         url: "https://digitalsalt.com/wp-content/uploads/AI-CI-Identification-PDF-1.pdf",
@@ -149,12 +149,7 @@ export const aiProjects: AIProject[] = [
     effort: "350 man-hours",
     description:
       "Data search tool for a newly launched claims management initiative in Melbourne — enabling rapid document discovery across large datasets.",
-    links: [
-      {
-        label: "Demo",
-        url: "https://demo.digitalsalt.ai/",
-      },
-    ],
+    links: [],
   },
   {
     id: "kickstart-sw",
