@@ -28,10 +28,6 @@ export const consultingProjects: ConsultingProject[] = [
         label: "digitalsalt — Configuration Management",
         url: "https://digitalsalt.de/insight/konfigurationsmanagement/",
       },
-      {
-        label: "Project Brief (PDF)",
-        url: "https://696e51d8-8ba3-40f3-becb-0667440275bf.filesusr.com/ugd/91a761_d6e1c5589dc3458d905462604ecd0494.pdf",
-      },
     ],
   },
   {
@@ -43,8 +39,8 @@ export const consultingProjects: ConsultingProject[] = [
       "Focused on the starting phase of a large-scale project for the construction of submarines — identifying gaps between current capabilities and project requirements.",
     links: [
       {
-        label: "Project Brief (PDF)",
-        url: "https://696e51d8-8ba3-40f3-becb-0667440275bf.filesusr.com/ugd/91a761_691c23ff1eca4d43bc36005eada28afb.pdf",
+        label: "digitalsalt — GAP Analysis",
+        url: "https://digitalsalt.com/insight/gap-analyse/",
       },
     ],
   },
@@ -59,10 +55,6 @@ export const consultingProjects: ConsultingProject[] = [
       {
         label: "digitalsalt — Earned Value Management",
         url: "https://en.digitalsalt.de/insight/earned-value-management/",
-      },
-      {
-        label: "Project Brief (PDF)",
-        url: "https://696e51d8-8ba3-40f3-becb-0667440275bf.filesusr.com/ugd/91a761_2076e1f7adf24be5befda817f2329c06.pdf",
       },
     ],
   },
@@ -85,10 +77,6 @@ export const consultingProjects: ConsultingProject[] = [
       {
         label: "digitalsalt — Requirements Management",
         url: "https://digitalsalt.com/en/insight/requirements-management/",
-      },
-      {
-        label: "Project Brief (PDF)",
-        url: "https://696e51d8-8ba3-40f3-becb-0667440275bf.filesusr.com/ugd/91a761_655f51af2ae44da39bcdc9f15e96318f.pdf",
       },
     ],
   },
