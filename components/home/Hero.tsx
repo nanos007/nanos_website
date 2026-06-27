@@ -105,7 +105,6 @@ export default function Hero() {
               priority
               sizes="(max-width: 768px) 100vw, 50vw"
             />
-            <div className="absolute bottom-0 left-0 right-0 h-1 bg-accent-steel" />
           </div>
         </motion.div>
       </div>
