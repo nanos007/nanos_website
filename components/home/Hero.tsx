@@ -27,7 +27,7 @@ export default function Hero() {
 
   return (
     <section className="bg-canvas py-24 px-6 md:px-12">
-      <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-5xl mx-auto grid md:grid-cols-[1fr_320px] gap-12 items-center">
         {/* Left: text */}
         <motion.div variants={containerVariants} initial="hidden" animate="visible">
           <motion.p
@@ -96,7 +96,7 @@ export default function Hero() {
           transition={{ duration: 0.9, delay: 0.3, ease: EASE }}
           className="relative"
         >
-          <div className="relative rounded-2xl overflow-hidden bg-surface-card aspect-[4/5]">
+          <div className="relative rounded-2xl overflow-hidden bg-surface-card aspect-[3/4]">
             <Image
               src="/images/hero-george-nanos.jpg"
               alt="George Nanos standing in front of a Tesla Cybertruck"

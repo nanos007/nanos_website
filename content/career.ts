@@ -240,7 +240,7 @@ export const career: CareerEntry[] = [
         url: "https://696e51d8-8ba3-40f3-becb-0667440275bf.filesusr.com/ugd/91a761_d482abdbbf0343ce9d7a598b542363aa.pdf",
       },
     ],
-    logo: "/images/logos/hsy.png",
+    logo: "/images/logos/hsy.jpg",
     type: "academic",
   },
 ];
