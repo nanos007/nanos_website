@@ -69,7 +69,7 @@ function ClientEntry({ name, url, logo, badgeWithText }: Client) {
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <p className="text-[33px] font-semibold tracking-[0.18em] uppercase text-muted mb-8">
+    <p className="text-[16px] font-semibold tracking-[0.18em] uppercase text-muted mb-8">
       {children}
     </p>
   );
@@ -78,7 +78,7 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 function SubLabel({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex items-center gap-3 mb-6">
-      <span className="text-[30px] font-bold tracking-[0.2em] uppercase text-ink/50">{children}</span>
+      <span className="text-[14px] font-bold tracking-[0.2em] uppercase text-ink/50">{children}</span>
       <span className="flex-1 border-t border-hairline" />
     </div>
   );
