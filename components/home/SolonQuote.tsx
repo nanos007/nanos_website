@@ -2,7 +2,7 @@ import FadeIn from "@/components/ui/FadeIn";
 
 export default function SolonQuote() {
   return (
-    <section className="bg-surface-dark py-24 px-6 md:px-12">
+    <section className="bg-surface-dark py-40 px-6 md:px-12">
       <div className="max-w-3xl mx-auto text-center">
         <FadeIn>
           <blockquote>
