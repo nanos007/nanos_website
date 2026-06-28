@@ -22,19 +22,7 @@ const navItems: NavItem[] = [
       { label: "Sales", href: "/leadership/sales" },
     ],
   },
-  { label: "Resume", href: "/resume" },
   { label: "Contact", href: "/contact" },
-  {
-    label: "More",
-    href: "#",
-    groupOnly: true,
-    children: [
-      { label: "Certificates", href: "/certificates" },
-      { label: "Shipping Certs", href: "/certificates/shipping" },
-      { label: "Digital Certs", href: "/certificates/digital" },
-      { label: "Impressions", href: "/impressions" },
-    ],
-  },
 ];
 
 export default function Navigation() {

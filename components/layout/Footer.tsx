@@ -2,27 +2,24 @@ import Link from "next/link";
 import LinkedInIcon from "@/components/ui/LinkedInIcon";
 
 const footerLinks = {
-  "Career & Work": [
-    { label: "Resume", href: "/resume" },
-    { label: "Consulting Projects", href: "/resume/consulting" },
-    { label: "AI Projects", href: "/resume/ai-projects" },
-    { label: "DEEPDOCK Ideation", href: "/resume/deepdock-secure" },
-  ],
   Leadership: [
     { label: "Soft Skills", href: "/leadership/soft-skills" },
     { label: "Tools", href: "/leadership/tools" },
     { label: "Sales", href: "/leadership/sales" },
     { label: "Auditor vs. Consultant", href: "/resume/auditor-vs-consultant" },
   ],
-  Certifications: [
-    { label: "Shipping", href: "/certificates/shipping" },
-    { label: "Digital", href: "/certificates/digital" },
-    { label: "Impressions", href: "/impressions" },
+  "Career & Work": [
+    { label: "Resume", href: "/resume" },
+    { label: "Consulting Projects", href: "/resume/consulting" },
+    { label: "AI Projects", href: "/resume/ai-projects" },
+  ],
+  "Research Projects": [
+    { label: "DEEPDOCK Ideation", href: "/resume/deepdock-secure" },
   ],
   Connect: [
     { label: "Contact", href: "/contact" },
     { label: "LinkedIn", href: "https://de.linkedin.com/in/georgios-nanos-7048b25a", external: true },
-{ label: "Disclaimer", href: "/disclaimer" },
+    { label: "Disclaimer", href: "/disclaimer" },
   ],
 };
 
