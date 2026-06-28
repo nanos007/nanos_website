@@ -82,6 +82,25 @@ export const education: EducationEntry[] = [
     logo: "/images/logos/insead.png",
   },
   {
+    id: "harvard",
+    degree: "Leadership and Communication — Professional Certificate",
+    institution: "Harvard University (HarvardX)",
+    institutionUrl: "https://www.harvard.edu",
+    location: "Germany (Remote)",
+    startYear: "2024",
+    endYear: "04/2024",
+    duration: "Online",
+    details:
+      "Professional Certificate programme covering leadership frameworks, adaptive leadership, and strategic communication. Endorsed by Ronald Heifetz, Founder of the Center for Public Leadership at Harvard Kennedy School, and James Engell, Gurney Professor of English and Professor of Comparative Literature at Harvard University.",
+    links: [
+      {
+        label: "View Certificate",
+        url: "https://credentials.edx.org/credentials/c47f6116809042bbba7439d6f4a6d482/",
+      },
+    ],
+    logo: "/images/logos/harvard.png",
+  },
+  {
     id: "dsa",
     degree: "Abitur",
     institution: "Deutsche Schule Athen (DSA)",
