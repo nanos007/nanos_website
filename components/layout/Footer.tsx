@@ -8,11 +8,6 @@ const footerLinks = {
     { label: "Sales", href: "/leadership/sales" },
     { label: "Auditor vs. Consultant", href: "/resume/auditor-vs-consultant" },
   ],
-  "Career & Work": [
-    { label: "Resume", href: "/resume" },
-    { label: "Consulting Projects", href: "/resume/consulting" },
-    { label: "AI Projects", href: "/resume/ai-projects" },
-  ],
   "Research Projects": [
     { label: "DEEPDOCK Ideation", href: "/resume/deepdock-secure" },
   ],
