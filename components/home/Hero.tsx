@@ -51,7 +51,7 @@ export default function Hero() {
             variants={itemVariants}
             className="text-base text-body leading-relaxed mb-8 max-w-md"
           >
-            Dipl.-Ing. EE&amp;IT · MBA · 20+ years across Digital Solutions, Shipbuilding,
+            Dipl.-Ing. · MBA · 20+ years across Digital Solutions, Shipbuilding,
             Maritime, and Defense. Currently Principal Project Manager at{" "}
             <a
               href="https://www.thalesgroup.com/en"
