@@ -131,7 +131,7 @@ export const businessTools: BusinessTool[] = [
   {
     id: "resource-management",
     name: "Resource Management",
-    tag: "MBA",
+    tag: "RWTH",
     description:
       "Allocation methodologies including FIFO, LIFO, FILO, and FCFS for inventory, network, and task scheduling optimization.",
   },
