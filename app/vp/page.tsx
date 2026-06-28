@@ -22,10 +22,10 @@ const stats = [
 const competencies = [
   { title: "Cross-functional Leadership", desc: "Building and directing diverse, international teams across engineering, sales, and consulting functions." },
   { title: "Program & Project Management", desc: "Large-scale defense and maritime programs from bid to delivery, on time and within scope." },
-  { title: "Business Development & Sales Leadership", desc: "P&L ownership, strategic bids, key account management across SEMEA and European markets." },
   { title: "Systems Engineering", desc: "Naval underwater systems, functional integration, technical contract negotiation." },
-  { title: "Auditing & Compliance", desc: "International operational, financial, and compliance audits across defense subsidiaries." },
   { title: "Digital Transformation", desc: "Maritime software solutions, AI implementation, process digitalization for naval and industrial clients." },
+  { title: "Auditing & Compliance", desc: "International operational, financial, and compliance audits across defense subsidiaries." },
+  { title: "Business Development & Sales Leadership", desc: "P&L ownership, strategic bids, key account management across SEMEA and European markets." },
 ];
 
 const roles = [
