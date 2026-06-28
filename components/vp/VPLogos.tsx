@@ -61,8 +61,8 @@ function ClientEntry({ name, url, logo, badgeWithText }: Client) {
   );
 }
 
-function SectionLabel({ children }: { children: React.ReactNode }) {
-  return <p className="text-[16px] font-semibold tracking-[0.18em] uppercase text-muted mb-8">{children}</p>;
+function SectionLabel({ children, className }: { children: React.ReactNode; className?: string }) {
+  return <p className={`text-[16px] font-semibold tracking-[0.18em] uppercase mb-8 ${className ?? "text-muted"}`}>{children}</p>;
 }
 
 function SubLabel({ children }: { children: React.ReactNode }) {
@@ -105,7 +105,7 @@ export default function VPLogos() {
           </div>
 
           <div className="border-t border-hairline pt-10">
-            <SectionLabel>Past Collaborations, Clients &amp; Partners</SectionLabel>
+            <SectionLabel className="text-accent-steel">Past Collaborations, Clients &amp; Partners</SectionLabel>
             <div className="space-y-10">
               <div>
                 <SubLabel>Defense</SubLabel>
