@@ -26,8 +26,6 @@ const defenseClients: Client[] = [
   { name: "Lürssen", url: "https://www.lurssen.com", logo: "/images/logos/clients/lurssen.png" },
   { name: "NVL Group", url: "https://www.nvl-group.de" },
   { name: "nobiskrug", url: "https://www.nobiskrug.com" },
-  { name: "Fincantieri", url: "https://www.fincantieri.com", logo: "/images/logos/clients/fincantieri.svg" },
-  { name: "Naval Group", url: "https://www.naval-group.com/en/", logo: "/images/logos/clients/naval-group.svg" },
 ];
 
 const maritimeClients: Client[] = [
@@ -35,12 +33,9 @@ const maritimeClients: Client[] = [
   { name: "Latsco", url: "https://www.latsco.com", logo: "/images/logos/clients/latsco.svg" },
   { name: "Laskaridis Maritime", url: "https://www.laskaridis.com" },
   { name: "Maran Tankers", url: "https://www.marantankers.com" },
-  { name: "Navios Group", url: "https://www.navios.com", logo: "/images/logos/clients/navios.svg" },
   { name: "Columbia Shipmanagement", url: "https://columbiagroup.org/ship-management-services/" },
   { name: "Nakilat", url: "https://www.nakilat.com", logo: "/images/logos/clients/nakilat.svg" },
   { name: "ADNOC Shipping", url: "https://www.adnocshipping.ae" },
-  { name: "Bahri", url: "https://www.bahri.sa/en", logo: "/images/logos/clients/bahri.png" },
-  { name: "Hartmann Reederei", url: "https://www.hartmann-group.com", logo: "/images/logos/clients/hartmann.svg" },
 ];
 
 function ClientEntry({ name, url, logo }: Client) {
