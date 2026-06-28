@@ -27,7 +27,7 @@ export default function Hero() {
 
   return (
     <section className="bg-canvas py-24 px-6 md:px-12">
-      <div className="max-w-5xl mx-auto grid md:grid-cols-[1fr_320px] gap-12 items-center">
+      <div className="max-w-5xl mx-auto grid md:grid-cols-[1fr_220px] gap-12 items-center">
         {/* Left: text */}
         <motion.div variants={containerVariants} initial="hidden" animate="visible">
           <motion.p
