@@ -19,20 +19,20 @@ export default function DisclaimerPage() {
           >
             Disclaimer &amp; Legal Notice
           </h1>
-          <p className="text-sm text-muted mt-2">Last updated: June 2026</p>
+          <p className="text-[8px] text-muted mt-2">Last updated: June 2026</p>
         </FadeIn>
       </SectionBand>
 
       <SectionBand card>
         <FadeIn>
-          <div className="max-w-3xl space-y-10 text-body leading-relaxed">
+          <div className="max-w-3xl space-y-10 text-[8px] leading-relaxed">
 
             {/* ── 1. IMPRESSUM ── */}
             <div>
-              <h2 className="font-sans text-base font-semibold text-ink mb-1 uppercase tracking-wide">
+              <h2 className="font-sans text-[9px] font-semibold text-ink mb-1 uppercase tracking-wide">
                 1. Impressum (Anbieterkennzeichnung gemäß § 5 TMG)
               </h2>
-              <p className="text-xs text-muted mb-3">
+              <p className="text-[7px] text-muted mb-3">
                 Pflichtangaben nach dem Telemediengesetz (TMG) für in Deutschland zugängliche Websites.
               </p>
               <p>
@@ -40,17 +40,16 @@ export default function DisclaimerPage() {
               </p>
               <p className="mt-2">
                 Dipl.-Ing. Georgios Nanos, MBA<br />
-                Kiel, Schleswig-Holstein, Germany<br />
                 Contact: via the <a href="/contact" className="text-primary hover:underline">Contact page</a> of this website
               </p>
-              <p className="mt-3 text-sm text-muted">
+              <p className="mt-3 text-[8px] text-muted">
                 This website is a purely private, non-commercial personal portfolio. It does not offer goods or services for sale, does not generate revenue, and does not pursue any commercial purpose within the meaning of § 5 TMG or § 14 BGB. It is operated as a private informational and self-presentational resource and falls within the scope of private use under applicable German teleservices law. No EU VAT identification number is held or required in connection with this website.
               </p>
             </div>
 
             {/* ── 2. NATURE OF THIS WEBSITE ── */}
             <div>
-              <h2 className="font-sans text-base font-semibold text-ink mb-1 uppercase tracking-wide">
+              <h2 className="font-sans text-[9px] font-semibold text-ink mb-1 uppercase tracking-wide">
                 2. Nature and Purpose of this Website
               </h2>
               <p>
@@ -63,7 +62,7 @@ export default function DisclaimerPage() {
 
             {/* ── 3. EMPLOYMENT & NEBENTÄTIGKEIT ── */}
             <div>
-              <h2 className="font-sans text-base font-semibold text-ink mb-1 uppercase tracking-wide">
+              <h2 className="font-sans text-[9px] font-semibold text-ink mb-1 uppercase tracking-wide">
                 3. Employment Status, Secondary Activities, and Non-Competition
               </h2>
               <p>
@@ -84,7 +83,7 @@ export default function DisclaimerPage() {
 
             {/* ── 4. CONFLICT OF INTEREST ── */}
             <div>
-              <h2 className="font-sans text-base font-semibold text-ink mb-1 uppercase tracking-wide">
+              <h2 className="font-sans text-[9px] font-semibold text-ink mb-1 uppercase tracking-wide">
                 4. Conflict of Interest Statement
               </h2>
               <p>
@@ -103,7 +102,7 @@ export default function DisclaimerPage() {
 
             {/* ── 5. DEEPDOCK ── */}
             <div>
-              <h2 className="font-sans text-base font-semibold text-ink mb-1 uppercase tracking-wide">
+              <h2 className="font-sans text-[9px] font-semibold text-ink mb-1 uppercase tracking-wide">
                 5. DEEPDOCK Research Initiative
               </h2>
               <p>
@@ -119,7 +118,7 @@ export default function DisclaimerPage() {
 
             {/* ── 6. NON-AFFILIATION ── */}
             <div>
-              <h2 className="font-sans text-base font-semibold text-ink mb-1 uppercase tracking-wide">
+              <h2 className="font-sans text-[9px] font-semibold text-ink mb-1 uppercase tracking-wide">
                 6. Non-Affiliation and Non-Endorsement
               </h2>
               <p>
@@ -132,7 +131,7 @@ export default function DisclaimerPage() {
 
             {/* ── 7. LIABILITY FOR CONTENT ── */}
             <div>
-              <h2 className="font-sans text-base font-semibold text-ink mb-1 uppercase tracking-wide">
+              <h2 className="font-sans text-[9px] font-semibold text-ink mb-1 uppercase tracking-wide">
                 7. Liability for Content (Haftung für Inhalte)
               </h2>
               <p>
@@ -145,7 +144,7 @@ export default function DisclaimerPage() {
 
             {/* ── 8. LIABILITY FOR EXTERNAL LINKS ── */}
             <div>
-              <h2 className="font-sans text-base font-semibold text-ink mb-1 uppercase tracking-wide">
+              <h2 className="font-sans text-[9px] font-semibold text-ink mb-1 uppercase tracking-wide">
                 8. Liability for External Links (Haftung für Links)
               </h2>
               <p>
@@ -155,7 +154,7 @@ export default function DisclaimerPage() {
 
             {/* ── 9. COPYRIGHT ── */}
             <div>
-              <h2 className="font-sans text-base font-semibold text-ink mb-1 uppercase tracking-wide">
+              <h2 className="font-sans text-[9px] font-semibold text-ink mb-1 uppercase tracking-wide">
                 9. Copyright (Urheberrecht)
               </h2>
               <p>
@@ -165,7 +164,7 @@ export default function DisclaimerPage() {
 
             {/* ── 10. DATA PROTECTION ── */}
             <div>
-              <h2 className="font-sans text-base font-semibold text-ink mb-1 uppercase tracking-wide">
+              <h2 className="font-sans text-[9px] font-semibold text-ink mb-1 uppercase tracking-wide">
                 10. Data Protection (Datenschutz)
               </h2>
               <p>
@@ -175,7 +174,7 @@ export default function DisclaimerPage() {
 
             {/* ── 11. GOVERNING LAW ── */}
             <div>
-              <h2 className="font-sans text-base font-semibold text-ink mb-1 uppercase tracking-wide">
+              <h2 className="font-sans text-[9px] font-semibold text-ink mb-1 uppercase tracking-wide">
                 11. Governing Law and Jurisdiction
               </h2>
               <p>
@@ -185,7 +184,7 @@ export default function DisclaimerPage() {
 
             {/* ── 12. GENERAL LIMITATION OF LIABILITY ── */}
             <div>
-              <h2 className="font-sans text-base font-semibold text-ink mb-1 uppercase tracking-wide">
+              <h2 className="font-sans text-[9px] font-semibold text-ink mb-1 uppercase tracking-wide">
                 12. General Limitation of Liability
               </h2>
               <p>
@@ -195,13 +194,13 @@ export default function DisclaimerPage() {
 
             {/* ── FOOTER ── */}
             <div className="border-t border-hairline pt-6 space-y-2">
-              <p className="text-xs text-muted">
+              <p className="text-[7px] text-muted">
                 © 1998–2026 Dipl.-Ing. Georgios Nanos, MBA. All rights reserved.
               </p>
-              <p className="text-xs text-muted">
+              <p className="text-[7px] text-muted">
                 This disclaimer was last reviewed in June 2026. The operator reserves the right to update or amend this disclaimer at any time without prior notice.
               </p>
-              <p className="text-xs text-muted italic">
+              <p className="text-[7px] text-muted italic">
                 This disclaimer is provided for informational purposes and does not constitute legal advice. It represents the operator&apos;s good-faith interpretation of applicable law. For binding legal counsel, consult a qualified attorney.
               </p>
             </div>
