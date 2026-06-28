@@ -39,6 +39,44 @@ export const education: EducationEntry[] = [
     logo: "/images/logos/rwth-aachen.png",
   },
   {
+    id: "harvard",
+    degree: "Leadership and Communication — Professional Certificate",
+    institution: "Harvard University (HarvardX)",
+    institutionUrl: "https://www.harvard.edu",
+    location: "Germany (Remote)",
+    startYear: "2024",
+    endYear: "04/2024",
+    duration: "Online",
+    details:
+      "Professional Certificate programme covering leadership frameworks, adaptive leadership, and strategic communication. Endorsed by Ronald Heifetz, Founder of the Center for Public Leadership at Harvard Kennedy School, and James Engell, Gurney Professor of English and Professor of Comparative Literature at Harvard University.",
+    links: [
+      {
+        label: "View Certificate",
+        url: "https://credentials.edx.org/credentials/c47f6116809042bbba7439d6f4a6d482/",
+      },
+    ],
+    logo: "/images/logos/harvard.png",
+  },
+  {
+    id: "insead",
+    degree: "Digital Transformation & Innovation Certificate",
+    institution: "INSEAD",
+    institutionUrl: "https://www.insead.edu/",
+    location: "Athens, Greece",
+    startYear: "02/2019",
+    endYear: "04/2019",
+    duration: "3 mos",
+    details:
+      "Mastered the Innovator's Method; studied the ARC Framework; addressed digital transformation challenges and corporate innovation.",
+    links: [
+      {
+        label: "INSEAD Certificate",
+        url: "https://certificate.insead.edu/a726be56-47aa-4765-bcba-d6f3a5a7fb61?key=fa3116c0ddced9481f7c7ace599fd644ec481b29119ceb07ebfadf762a7848a4",
+      },
+    ],
+    logo: "/images/logos/insead.png",
+  },
+  {
     id: "fom",
     degree: "Master of Business Administration (MBA)",
     institution: "FOM University",
@@ -61,44 +99,6 @@ export const education: EducationEntry[] = [
       },
     ],
     logo: "/images/logos/fom.png",
-  },
-  {
-    id: "insead",
-    degree: "Digital Transformation & Innovation Certificate",
-    institution: "INSEAD",
-    institutionUrl: "https://www.insead.edu/",
-    location: "Athens, Greece",
-    startYear: "02/2019",
-    endYear: "04/2019",
-    duration: "3 mos",
-    details:
-      "Mastered the Innovator's Method; studied the ARC Framework; addressed digital transformation challenges and corporate innovation.",
-    links: [
-      {
-        label: "INSEAD Certificate",
-        url: "https://certificate.insead.edu/a726be56-47aa-4765-bcba-d6f3a5a7fb61?key=fa3116c0ddced9481f7c7ace599fd644ec481b29119ceb07ebfadf762a7848a4",
-      },
-    ],
-    logo: "/images/logos/insead.png",
-  },
-  {
-    id: "harvard",
-    degree: "Leadership and Communication — Professional Certificate",
-    institution: "Harvard University (HarvardX)",
-    institutionUrl: "https://www.harvard.edu",
-    location: "Germany (Remote)",
-    startYear: "2024",
-    endYear: "04/2024",
-    duration: "Online",
-    details:
-      "Professional Certificate programme covering leadership frameworks, adaptive leadership, and strategic communication. Endorsed by Ronald Heifetz, Founder of the Center for Public Leadership at Harvard Kennedy School, and James Engell, Gurney Professor of English and Professor of Comparative Literature at Harvard University.",
-    links: [
-      {
-        label: "View Certificate",
-        url: "https://credentials.edx.org/credentials/c47f6116809042bbba7439d6f4a6d482/",
-      },
-    ],
-    logo: "/images/logos/harvard.png",
   },
   {
     id: "dsa",
