@@ -68,7 +68,7 @@ export default function DisclaimerPage() {
               <p>
                 The operator is currently engaged in full-time salaried employment. This website is operated entirely in a private capacity, during personal free time, and without use of any employer resources, facilities, systems, proprietary information, or working time. It does not constitute a <em>Nebentätigkeit</em> (secondary occupation or side activity) in the legal sense of the term as defined under German employment law, labor regulations, or the operator&apos;s employment agreement, for the following reasons:
               </p>
-              <ul className="list-disc list-inside mt-3 space-y-2 text-sm">
+              <ul className="list-disc list-inside mt-3 space-y-2 text-[8px]">
                 <li>No remuneration, payment, commission, or economic benefit of any kind is received in connection with the operation or content of this website.</li>
                 <li>No services are rendered through this website to third parties, whether gratuitously or for consideration.</li>
                 <li>The website does not compete with the business, products, services, or commercial activities of the operator&apos;s current or former employer(s).</li>
@@ -89,7 +89,7 @@ export default function DisclaimerPage() {
               <p>
                 The operator explicitly declares that no actual, apparent, or potential conflict of interest exists between the content and purpose of this website and the operator&apos;s duties and obligations to his current or former employer(s), clients, or contracting parties. Specifically:
               </p>
-              <ul className="list-disc list-inside mt-3 space-y-2 text-sm">
+              <ul className="list-disc list-inside mt-3 space-y-2 text-[8px]">
                 <li>This website does not solicit clients, business partners, suppliers, or employees of any current or former employer of the operator.</li>
                 <li>This website does not market competing products or services in any market segment in which the operator&apos;s employer operates.</li>
                 <li>This website does not leverage, appropriate, or commercially exploit employer-specific knowledge, relationships, goodwill, or resources.</li>
