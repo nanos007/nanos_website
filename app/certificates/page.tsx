@@ -36,6 +36,11 @@ const featuredCerts = [
     institution: "INSEAD",
     logo: "/images/logos/insead.png",
   },
+  {
+    name: "Leadership & Communication",
+    institution: "Harvard University",
+    logo: "/images/logos/harvard.png",
+  },
 ];
 
 export default function CertificatesPage() {
