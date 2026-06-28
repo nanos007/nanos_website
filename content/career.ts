@@ -141,7 +141,7 @@ export const career: CareerEntry[] = [
   },
   {
     id: "deepdock",
-    role: "Research Project Lead",
+    role: "Research Lead",
     company: "DEEPDOCK",
     companyUrl: "http://www.deepdock.xyz",
     location: "Athens",
