@@ -22,14 +22,6 @@ export default function Footer() {
   return (
     <footer className="bg-surface-dark text-on-dark-soft" aria-label="Site footer">
       <div className="max-w-5xl mx-auto px-6 md:px-12 py-16">
-        {/* Top: Wordmark + tagline */}
-        <div className="mb-12 pb-8 border-b border-surface-dark-elevated">
-          <p className="font-sans text-base font-medium text-on-dark mb-2">
-            <span className="text-accent-steel">◆</span> Georgios Nanos
-          </p>
-          <p className="text-sm text-on-dark-soft">Defense Expert · Naval AI Researcher · MBA</p>
-        </div>
-
         {/* Link grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
           {Object.entries(footerLinks).map(([category, links]) => (
