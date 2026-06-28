@@ -16,6 +16,7 @@ interface Client {
   name: string;
   url: string;
   logo?: string;
+  badgeWithText?: boolean;
 }
 
 const defenseClients: Client[] = [
@@ -31,14 +32,14 @@ const defenseClients: Client[] = [
 const maritimeClients: Client[] = [
   { name: "Thenamaris", url: "https://www.thenamaris.com", logo: "/images/logos/clients/thenamaris.svg" },
   { name: "Latsco", url: "https://www.latsco.com", logo: "/images/logos/clients/latsco.svg" },
-  { name: "Laskaridis Maritime", url: "https://www.laskaridis.com" },
+  { name: "Laskaridis Maritime", url: "https://www.laskaridis.com", logo: "/images/logos/clients/laskaridis.svg", badgeWithText: true },
   { name: "Maran Tankers", url: "https://www.marantankers.com" },
   { name: "Columbia Shipmanagement", url: "https://columbiagroup.org/ship-management-services/" },
   { name: "Nakilat", url: "https://www.nakilat.com", logo: "/images/logos/clients/nakilat.svg" },
   { name: "ADNOC Shipping", url: "https://www.adnocshipping.ae" },
 ];
 
-function ClientEntry({ name, url, logo }: Client) {
+function ClientEntry({ name, url, logo, badgeWithText }: Client) {
   return (
     <a
       href={url}
@@ -48,13 +49,15 @@ function ClientEntry({ name, url, logo }: Client) {
       title={name}
       className="opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
     >
-      {logo ? (
+      {logo && badgeWithText ? (
+        <span className="inline-flex items-center gap-2">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={logo} alt={name} className="h-10 w-auto object-contain" />
+          <span className="text-sm font-semibold tracking-widest uppercase text-body">LASKARIDIS</span>
+        </span>
+      ) : logo ? (
         // eslint-disable-next-line @next/next/no-img-element
-        <img
-          src={logo}
-          alt={name}
-          className="h-10 w-auto max-w-[130px] object-contain"
-        />
+        <img src={logo} alt={name} className="h-10 w-auto max-w-[130px] object-contain" />
       ) : (
         <span className="inline-block border border-current rounded px-3 py-1.5 text-xs font-medium tracking-wide text-body whitespace-nowrap">
           {name}
