@@ -30,7 +30,7 @@ const competencies = [
 
 const roles = [
   { title: "Principal Project Manager", company: "Thales", period: "01/2025 – Present", location: "Kiel, Germany", note: "Defense systems program management." },
-  { title: "Principal Consultant", company: "digitalsalt", period: "03/2020 – 12/2024", location: "Germany", note: "Senior consulting across defense and maritime digitalization programs; naval systems, digital transformation." },
+  { title: "Principal", company: "digitalsalt", period: "03/2020 – 12/2024", location: "Germany", note: "Senior consulting across defense and maritime digitalization programs; naval systems, digital transformation." },
   { title: "Regional Sales Manager EMEA", company: "DNV", period: "04/2014 – 02/2020", location: "Hamburg, Germany", note: "Managed EMEA region; quadrupled annual turnover; led large-scale maritime software bids." },
   { title: "Senior Auditor — Defense", company: "ThyssenKrupp AG", period: "12/2011 – 03/2014", location: "Essen, Germany", note: "Operational, financial, and compliance audits across international defense subsidiaries." },
   { title: "Systems Engineer & Project Manager", company: "ThyssenKrupp Marine Systems", period: "03/2006 – 11/2011", location: "Kiel, Germany", note: "Functional integration and project management for underwater naval systems." },
