@@ -51,17 +51,8 @@ export default function Hero() {
             variants={itemVariants}
             className="text-base text-body leading-relaxed mb-8 max-w-md"
           >
-            Dipl.-Ing. · MBA · 20+ years across Digital Solutions, Shipbuilding,
-            Maritime, and Defense. Currently Principal Project Manager at{" "}
-            <a
-              href="https://www.thalesgroup.com/en"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary hover:text-primary-active transition-colors"
-            >
-              Thales
-            </a>
-            , Kiel.
+            Dipl.-Ing. · MBA · 20+ years across Defense, Naval, Shipbuilding,
+            Maritime & Digital Solutions.
           </motion.p>
 
           <motion.div variants={itemVariants} className="flex flex-wrap gap-3">

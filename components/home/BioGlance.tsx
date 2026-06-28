@@ -15,7 +15,7 @@ export default function BioGlance() {
               className="font-display text-4xl font-normal text-ink mb-8"
               style={{ letterSpacing: "-0.5px" }}
             >
-              Creative engineer. Data-driven leader.
+              Data-driven leader. Creative engineer.
             </h2>
           </FadeIn>
           <FadeIn delay={0.1}>
@@ -38,7 +38,7 @@ export default function BioGlance() {
                 knowledge.
               </p>
               <p className="italic text-muted">
-                The title I hold with the most pride is &ldquo;Dad&rdquo; to my extraordinary son, Sopho.
+                The title I hold with the most pride is &ldquo;Husband&rdquo; to my wonderful wife Xanthianna and &ldquo;Dad&rdquo; to my extraordinary son, Sopho.
               </p>
             </div>
           </FadeIn>
