@@ -57,7 +57,7 @@ function ClientEntry({ name, url, logo, badgeWithText }: Client) {
         </span>
       ) : logo ? (
         // eslint-disable-next-line @next/next/no-img-element
-        <img src={logo} alt={name} className="h-10 w-auto max-w-[130px] object-contain" />
+        <img src={logo} alt={name} className="h-10 w-auto max-w-[130px] object-contain mix-blend-multiply" />
       ) : (
         <span className="inline-block border border-current rounded px-3 py-1.5 text-xs font-medium tracking-wide text-body whitespace-nowrap">
           {name}
