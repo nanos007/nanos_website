@@ -8,6 +8,7 @@ import { Menu, X, ChevronDown } from "lucide-react";
 interface NavItem {
   label: string;
   href: string;
+  groupOnly?: boolean;
   children?: { label: string; href: string }[];
 }
 
@@ -22,16 +23,18 @@ const navItems: NavItem[] = [
     ],
   },
   { label: "Resume", href: "/resume" },
+  { label: "Contact", href: "/contact" },
   {
-    label: "Certificates",
-    href: "/certificates",
+    label: "More",
+    href: "#",
+    groupOnly: true,
     children: [
-      { label: "Shipping", href: "/certificates/shipping" },
-      { label: "Digital", href: "/certificates/digital" },
+      { label: "Certificates", href: "/certificates" },
+      { label: "Shipping Certs", href: "/certificates/shipping" },
+      { label: "Digital Certs", href: "/certificates/digital" },
+      { label: "Impressions", href: "/impressions" },
     ],
   },
-  { label: "Impressions", href: "/impressions" },
-  { label: "Contact", href: "/contact" },
 ];
 
 export default function Navigation() {
@@ -92,18 +95,29 @@ export default function Navigation() {
                   onMouseEnter={() => openMenu(item.label)}
                   onMouseLeave={scheduleClose}
                 >
-                  {/* Label navigates to hub; chevron toggles dropdown */}
+                  {/* Label: groupOnly items use a button; others link to hub page */}
                   <div className={`flex items-center rounded-md transition-colors ${
-                    pathname.startsWith(item.href)
+                    !item.groupOnly && pathname.startsWith(item.href)
                       ? "text-ink bg-surface-card"
                       : "text-muted hover:text-ink hover:bg-surface-soft"
                   }`}>
-                    <Link
-                      href={item.href}
-                      className="pl-3 pr-1 py-2 text-sm font-medium"
-                    >
-                      {item.label}
-                    </Link>
+                    {item.groupOnly ? (
+                      <button
+                        onClick={() =>
+                          setOpenDropdown(openDropdown === item.label ? null : item.label)
+                        }
+                        className="pl-3 pr-1 py-2 text-sm font-medium"
+                      >
+                        {item.label}
+                      </button>
+                    ) : (
+                      <Link
+                        href={item.href}
+                        className="pl-3 pr-1 py-2 text-sm font-medium"
+                      >
+                        {item.label}
+                      </Link>
+                    )}
                     <button
                       onClick={() =>
                         setOpenDropdown(openDropdown === item.label ? null : item.label)
@@ -185,6 +199,18 @@ export default function Navigation() {
                 {item.children ? (
                   <>
                     <div className="flex items-center rounded-md">
+                      {item.groupOnly ? (
+                        <button
+                          onClick={() =>
+                            setMobileExpanded(
+                              mobileExpanded === item.label ? null : item.label
+                            )
+                          }
+                          className="flex-1 px-3 py-2 text-sm font-medium rounded-l-md text-left transition-colors text-muted hover:text-ink"
+                        >
+                          {item.label}
+                        </button>
+                      ) : (
                       <Link
                         href={item.href}
                         className={`flex-1 px-3 py-2 text-sm font-medium rounded-l-md transition-colors ${
@@ -195,6 +221,7 @@ export default function Navigation() {
                       >
                         {item.label}
                       </Link>
+                      )}
                       <button
                         onClick={() =>
                           setMobileExpanded(
