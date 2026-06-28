@@ -27,7 +27,7 @@ export default function VPHero() {
             Defense &amp; Maritime Executive
           </motion.p>
           <motion.h1 variants={itemVariants} className="font-display text-5xl md:text-6xl font-normal leading-tight text-ink mb-6" style={{ letterSpacing: "-1.5px" }}>
-            Georgios<br />Nanos
+            Georgios Nanos
           </motion.h1>
           <motion.p variants={itemVariants} className="text-base text-body leading-relaxed mb-8 max-w-md">
             Dipl.-Ing. · MBA · 20+ years leading defense, naval, and maritime programs across Europe and the Middle East.
