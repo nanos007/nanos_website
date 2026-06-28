@@ -3,7 +3,7 @@ import FadeIn from "@/components/ui/FadeIn";
 import SectionBand from "@/components/ui/SectionBand";
 
 const current = [
-  { name: "Thales", logo: "/images/logos/thales.svg", url: "https://www.thalesgroup.com/en", w: 120, h: 40 },
+  { name: "Thales", logo: "/images/logos/thales.svg", url: "https://www.thalesgroup.com/en", w: 80, h: 28 },
 ];
 
 const previous = [
@@ -104,7 +104,7 @@ export default function EmployerLogos() {
                   className="opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
                   aria-label={emp.name}
                 >
-                  <Image src={emp.logo} alt={emp.name} width={emp.w} height={emp.h} className="object-contain h-10 w-auto" />
+                  <Image src={emp.logo} alt={emp.name} width={emp.w} height={emp.h} style={{ height: emp.h, width: "auto" }} className="object-contain" />
                 </a>
               ))}
             </div>
