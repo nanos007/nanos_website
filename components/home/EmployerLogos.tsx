@@ -22,22 +22,22 @@ interface Client {
 
 const defenseClients: Client[] = [
   { name: "TKMS", url: "https://www.thyssenkrupp-marinesystems.com", logo: "/images/logos/clients/tkms.svg" },
-  { name: "Kockums", url: "https://www.kockums.se", logo: "/images/logos/clients/kockums.svg" },
+  { name: "Kockums", url: "https://www.saab.com", logo: "/images/logos/clients/kockums.svg" },
   { name: "Atlas Elektronik", url: "https://www.atlas-elektronik.com", logo: "/images/logos/clients/atlas.png" },
   { name: "L3Harris", url: "https://www.l3harris.com", logo: "/images/logos/clients/l3harris.svg" },
   { name: "Lürssen", url: "https://www.lurssen.com", logo: "/images/logos/clients/lurssen.png" },
-  { name: "NVL Group", url: "https://www.nvl-group.de", logo: "/images/logos/clients/nvl.svg" },
+  { name: "NVL Group", url: "http://www.nvl-group.de", logo: "/images/logos/clients/nvl.svg" },
   { name: "nobiskrug", url: "https://www.nobiskrug.com" },
 ];
 
 const maritimeClients: Client[] = [
   { name: "Thenamaris", url: "https://www.thenamaris.com", logo: "/images/logos/clients/thenamaris.svg" },
   { name: "Latsco", url: "https://www.latsco.com", logo: "/images/logos/clients/latsco.svg" },
-  { name: "Laskaridis Maritime", url: "https://www.laskaridis.com", logo: "/images/logos/clients/laskaridis.svg", badgeWithText: true },
-  { name: "Maran Tankers", url: "https://www.marantankers.com", logo: "/images/logos/clients/maran.png" },
+  { name: "Laskaridis Maritime", url: "https://laskmar.com/en", logo: "/images/logos/clients/laskaridis.svg", badgeWithText: true },
+  { name: "Maran Tankers", url: "https://marantankers.gr", logo: "/images/logos/clients/maran.png" },
   { name: "Columbia Shipmanagement", url: "https://columbiagroup.org/ship-management-services/", logo: "/images/logos/clients/columbia.jpg" },
   { name: "Nakilat", url: "https://www.nakilat.com", logo: "/images/logos/clients/nakilat.svg" },
-  { name: "ADNOC Shipping", url: "https://www.adnocshipping.ae" },
+  { name: "ADNOC Shipping", url: "https://www.adnoc.ae" },
 ];
 
 function ClientEntry({ name, url, logo, badgeWithText }: Client) {
@@ -68,17 +68,32 @@ function ClientEntry({ name, url, logo, badgeWithText }: Client) {
   );
 }
 
+function SectionLabel({ children }: { children: React.ReactNode }) {
+  return (
+    <p className="text-[11px] font-semibold tracking-[0.18em] uppercase text-muted mb-8">
+      {children}
+    </p>
+  );
+}
+
+function SubLabel({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="flex items-center gap-3 mb-6">
+      <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-ink/50">{children}</span>
+      <span className="flex-1 border-t border-hairline" />
+    </div>
+  );
+}
+
 export default function EmployerLogos() {
   return (
     <SectionBand>
       <FadeIn>
-        <div className="space-y-10">
+        <div className="space-y-14">
 
           {/* Current */}
           <div>
-            <p className="text-xs font-medium tracking-widest uppercase text-muted mb-6">
-              Current Company
-            </p>
+            <SectionLabel>Current Company</SectionLabel>
             <div className="flex flex-wrap gap-8 items-center">
               {current.map((emp) => (
                 <a
@@ -96,11 +111,9 @@ export default function EmployerLogos() {
           </div>
 
           {/* Previous */}
-          <div className="border-t border-hairline pt-8">
-            <p className="text-xs font-medium tracking-widest uppercase text-muted mb-6">
-              Previous Companies
-            </p>
-            <div className="flex flex-wrap gap-8 items-center">
+          <div className="border-t border-hairline pt-10">
+            <SectionLabel>Previous Companies</SectionLabel>
+            <div className="flex flex-wrap gap-10 items-center">
               {previous.map((emp) => (
                 <a
                   key={emp.name}
@@ -117,27 +130,27 @@ export default function EmployerLogos() {
           </div>
 
           {/* Past Collaborations */}
-          <div className="border-t border-hairline pt-8">
-            <p className="text-xs font-medium tracking-widest uppercase text-muted mb-8">
-              Past Collaborations, Clients &amp; Partners
-            </p>
+          <div className="border-t border-hairline pt-10">
+            <SectionLabel>Past Collaborations, Clients &amp; Partners</SectionLabel>
 
-            <p className="text-xs font-medium tracking-widest uppercase text-muted/50 mb-5">
-              Defense
-            </p>
-            <div className="flex flex-wrap gap-6 items-center mb-10">
-              {defenseClients.map((c) => (
-                <ClientEntry key={c.name} {...c} />
-              ))}
-            </div>
+            <div className="space-y-10">
+              <div>
+                <SubLabel>Defense</SubLabel>
+                <div className="flex flex-wrap gap-8 items-center">
+                  {defenseClients.map((c) => (
+                    <ClientEntry key={c.name} {...c} />
+                  ))}
+                </div>
+              </div>
 
-            <p className="text-xs font-medium tracking-widest uppercase text-muted/50 mb-5">
-              Maritime
-            </p>
-            <div className="flex flex-wrap gap-6 items-center">
-              {maritimeClients.map((c) => (
-                <ClientEntry key={c.name} {...c} />
-              ))}
+              <div>
+                <SubLabel>Maritime</SubLabel>
+                <div className="flex flex-wrap gap-8 items-center">
+                  {maritimeClients.map((c) => (
+                    <ClientEntry key={c.name} {...c} />
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
 
