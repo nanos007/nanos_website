@@ -3,7 +3,7 @@ import FadeIn from "@/components/ui/FadeIn";
 import SectionBand from "@/components/ui/SectionBand";
 
 const current = [
-  { name: "Thales", logo: "/images/logos/thales.png", url: "https://www.thalesgroup.com/en", w: 120, h: 40 },
+  { name: "Thales", logo: "/images/logos/thales.svg", url: "https://www.thalesgroup.com/en", w: 120, h: 40 },
 ];
 
 const previous = [
