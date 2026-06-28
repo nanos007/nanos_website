@@ -19,7 +19,7 @@ export default function DisclaimerPage() {
           >
             Disclaimer &amp; Legal Notice
           </h1>
-          <p className="text-[8px] text-muted mt-2">Last updated: June 2026</p>
+          <p className="text-[8px] text-muted mt-2">Last updated: December 2024</p>
         </FadeIn>
       </SectionBand>
 
@@ -198,7 +198,7 @@ export default function DisclaimerPage() {
                 © 1998–2026 Dipl.-Ing. Georgios Nanos, MBA. All rights reserved.
               </p>
               <p className="text-[7px] text-muted">
-                This disclaimer was last reviewed in June 2026. The operator reserves the right to update or amend this disclaimer at any time without prior notice.
+                This disclaimer was last reviewed in December 2024. The operator reserves the right to update or amend this disclaimer at any time without prior notice.
               </p>
               <p className="text-[7px] text-muted italic">
                 This disclaimer is provided for informational purposes and does not constitute legal advice. It represents the operator&apos;s good-faith interpretation of applicable law. For binding legal counsel, consult a qualified attorney.
