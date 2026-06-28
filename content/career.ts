@@ -30,8 +30,8 @@ export const career: CareerEntry[] = [
       "Oversees multi-million euro naval defense project; manages secure digital communication and combat readiness systems; leads cross-functional teams; manages public and private stakeholders.",
     links: [
       {
-        label: "Thales — Secure Digital Communication",
-        url: "https://www.thalesgroup.com/de/europe/deutschland/jedes-schadensszenario-meistern-souveraen-lueckenlos-jederzeit-automatisiert",
+        label: "Thales",
+        url: "https://www.thalesgroup.com/en",
       },
     ],
     logo: "/images/logos/thales.png",
