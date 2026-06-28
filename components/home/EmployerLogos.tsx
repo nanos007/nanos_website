@@ -27,7 +27,6 @@ const defenseClients: Client[] = [
   { name: "L3Harris", url: "https://www.l3harris.com", logo: "/images/logos/clients/l3harris.svg" },
   { name: "Lürssen", url: "https://www.lurssen.com", logo: "/images/logos/clients/lurssen.png" },
   { name: "NVL Group", url: "http://www.nvl-group.de", logo: "/images/logos/clients/nvl.svg" },
-  { name: "nobiskrug", url: "https://www.nobiskrug.com" },
 ];
 
 const maritimeClients: Client[] = [
