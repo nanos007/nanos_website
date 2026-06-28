@@ -6,9 +6,9 @@ const footerLinks = {
     { label: "Soft Skills", href: "/leadership/soft-skills" },
     { label: "Tools", href: "/leadership/tools" },
     { label: "Sales", href: "/leadership/sales" },
-    { label: "Auditor vs. Consultant", href: "/resume/auditor-vs-consultant" },
   ],
   "Research Projects": [
+    { label: "Auditor vs. Consultant", href: "/resume/auditor-vs-consultant" },
     { label: "DEEPDOCK Ideation", href: "/resume/deepdock-secure" },
   ],
   Connect: [
@@ -24,7 +24,7 @@ export default function Footer() {
       <div className="max-w-5xl mx-auto px-6 md:px-12 py-16">
         {/* Top: Wordmark + tagline */}
         <div className="mb-12 pb-8 border-b border-surface-dark-elevated">
-          <p className="font-display text-2xl text-on-dark mb-2">
+          <p className="font-display text-2xl text-on-dark mb-2 whitespace-nowrap">
             <span className="text-accent-steel">◆</span> Georgios Nanos
           </p>
           <p className="text-sm text-on-dark-soft">Defense Expert · Naval AI Researcher · MBA</p>
