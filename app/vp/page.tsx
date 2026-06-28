@@ -37,7 +37,7 @@ const roles = [
 ];
 
 const education = [
-  { degree: "Dipl.-Ing. Electrical Engineering & IT", institution: "RWTH Aachen University", logo: "/images/logos/rwth-aachen.png", period: "1999–2004", note: "Diploma Thesis Grade: 1.3 (excellent)" },
+  { degree: "Dipl.-Ing. Electrical Engineering", institution: "RWTH Aachen University", logo: "/images/logos/rwth-aachen.png", period: "1999–2004", note: "Diploma Thesis Grade: 1.3 (excellent)" },
   { degree: "Leadership and Communication — Professional Certificate", institution: "Harvard University", logo: "/images/logos/harvard.png", period: "2024", note: "Online" },
   { degree: "Digital Transformation & Innovation Certificate", institution: "INSEAD", logo: "/images/logos/insead.png", period: "2019", note: "Athens" },
   { degree: "Master of Business Administration (MBA)", institution: "FOM University", logo: "/images/logos/fom.png", period: "2010–2012", note: "Master Thesis Grade: 1.0 (excellent)" },
