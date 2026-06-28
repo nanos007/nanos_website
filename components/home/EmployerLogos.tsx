@@ -22,7 +22,7 @@ interface Client {
 
 const defenseClients: Client[] = [
   { name: "TKMS", url: "https://www.thyssenkrupp-marinesystems.com", logo: "/images/logos/clients/tkms.svg" },
-  { name: "Kockums", url: "https://www.kockums.se" },
+  { name: "Kockums", url: "https://www.kockums.se", logo: "/images/logos/clients/kockums.svg" },
   { name: "Atlas Elektronik", url: "https://www.atlas-elektronik.com", logo: "/images/logos/clients/atlas.png" },
   { name: "L3Harris", url: "https://www.l3harris.com", logo: "/images/logos/clients/l3harris.svg" },
   { name: "Lürssen", url: "https://www.lurssen.com", logo: "/images/logos/clients/lurssen.png" },
