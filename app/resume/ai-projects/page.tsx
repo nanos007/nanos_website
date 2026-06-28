@@ -43,7 +43,7 @@ export default function AIProjectsPage() {
                 <div className="flex items-start justify-between gap-2 mb-3">
                   <h2 className="font-sans text-base font-medium text-ink">{project.title}</h2>
                   <span className="text-xs text-muted bg-surface-soft px-2 py-0.5 rounded-full whitespace-nowrap flex-shrink-0">
-                    {project.effort}
+                    {project.type}
                   </span>
                 </div>
                 <p className="text-sm text-body leading-relaxed mb-4 flex-1">{project.description}</p>
