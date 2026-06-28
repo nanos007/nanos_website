@@ -1,24 +1,22 @@
 import type { Metadata } from "next";
-import Hero from "@/components/home/Hero";
-import BioGlance from "@/components/home/BioGlance";
-import EmployerLogos from "@/components/home/EmployerLogos";
+import VPHero from "@/components/vp/VPHero";
+import VPBio from "@/components/vp/VPBio";
+import VPLogos from "@/components/vp/VPLogos";
 import SolonQuote from "@/components/home/SolonQuote";
-import CTACards from "@/components/home/CTACards";
 
 export const metadata: Metadata = {
-  title: "Georgios Nanos — Defense Expert",
+  title: "Georgios Nanos — Defense & Maritime Executive",
   description:
-    "Personal website of Georgios Nanos — Dipl.-Ing. EE&IT, MBA, Defense & Maritime expert, Principal Project Manager at Thales, and founder of the DEEPDOCK autonomous naval systems research initiative.",
+    "Georgios Nanos — Dipl.-Ing. EE&IT, MBA. 20+ years leading defense, naval, and maritime programs across Europe and the Middle East.",
 };
 
 export default function HomePage() {
   return (
     <>
-      <Hero />
-      <BioGlance />
-      <EmployerLogos />
+      <VPHero />
+      <VPBio />
+      <VPLogos />
       <SolonQuote />
-      <CTACards />
     </>
   );
 }

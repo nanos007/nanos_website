@@ -2,48 +2,13 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState, useEffect, useRef } from "react";
-import { Menu, X, ChevronDown } from "lucide-react";
-
-interface NavItem {
-  label: string;
-  href: string;
-  groupOnly?: boolean;
-  children?: { label: string; href: string }[];
-}
-
-const navItems: NavItem[] = [
-  {
-    label: "Leadership",
-    href: "/leadership",
-    children: [
-      { label: "Soft Skills", href: "/leadership/soft-skills" },
-      { label: "Tools", href: "/leadership/tools" },
-      { label: "Sales", href: "/leadership/sales" },
-    ],
-  },
-  { label: "Resume", href: "/resume" },
-  { label: "Contact", href: "/contact" },
-  {
-    label: "More",
-    href: "#",
-    groupOnly: true,
-    children: [
-      { label: "Certificates", href: "/certificates" },
-      { label: "Shipping Certs", href: "/certificates/shipping" },
-      { label: "Digital Certs", href: "/certificates/digital" },
-      { label: "Impressions", href: "/impressions" },
-    ],
-  },
-];
+import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
 
 export default function Navigation() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
-  const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
   const [scrolled, setScrolled] = useState(false);
-  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -53,17 +18,7 @@ export default function Navigation() {
 
   useEffect(() => {
     setMobileOpen(false);
-    setOpenDropdown(null);
   }, [pathname]);
-
-  function openMenu(label: string) {
-    if (closeTimer.current) clearTimeout(closeTimer.current);
-    setOpenDropdown(label);
-  }
-
-  function scheduleClose() {
-    closeTimer.current = setTimeout(() => setOpenDropdown(null), 150);
-  }
 
   return (
     <header
@@ -76,7 +31,6 @@ export default function Navigation() {
         className="max-w-5xl mx-auto flex items-center justify-between h-16 px-6 md:px-12"
         aria-label="Main navigation"
       >
-        {/* Logo */}
         <Link
           href="/"
           className="font-display text-lg font-medium text-ink hover:text-primary transition-colors"
@@ -86,93 +40,25 @@ export default function Navigation() {
           <span>Georgios Nanos</span>
         </Link>
 
-        {/* Desktop Nav */}
-        <ul className="hidden md:flex items-center gap-1" role="list">
-          {navItems.map((item) => (
-            <li key={item.href} className="relative">
-              {item.children ? (
-                <div
-                  onMouseEnter={() => openMenu(item.label)}
-                  onMouseLeave={scheduleClose}
-                >
-                  {/* Label: groupOnly items use a button; others link to hub page */}
-                  <div className={`flex items-center rounded-md transition-colors ${
-                    !item.groupOnly && pathname.startsWith(item.href)
-                      ? "text-ink bg-surface-card"
-                      : "text-muted hover:text-ink hover:bg-surface-soft"
-                  }`}>
-                    {item.groupOnly ? (
-                      <button
-                        onClick={() =>
-                          setOpenDropdown(openDropdown === item.label ? null : item.label)
-                        }
-                        className="pl-3 pr-1 py-2 text-sm font-medium"
-                      >
-                        {item.label}
-                      </button>
-                    ) : (
-                      <Link
-                        href={item.href}
-                        className="pl-3 pr-1 py-2 text-sm font-medium"
-                      >
-                        {item.label}
-                      </Link>
-                    )}
-                    <button
-                      onClick={() =>
-                        setOpenDropdown(openDropdown === item.label ? null : item.label)
-                      }
-                      className="pr-2 py-2 text-sm"
-                      aria-expanded={openDropdown === item.label}
-                      aria-haspopup="true"
-                      aria-label={`${item.label} submenu`}
-                    >
-                      <ChevronDown
-                        size={14}
-                        className={`transition-transform duration-200 ${
-                          openDropdown === item.label ? "rotate-180" : ""
-                        }`}
-                      />
-                    </button>
-                  </div>
-
-                  {openDropdown === item.label && (
-                    <div
-                      className="absolute top-full left-0 mt-1 w-44 bg-canvas border border-hairline rounded-xl shadow-sm py-1"
-                      onMouseEnter={() => openMenu(item.label)}
-                      onMouseLeave={scheduleClose}
-                    >
-                      {item.children.map((child) => (
-                        <Link
-                          key={child.href}
-                          href={child.href}
-                          className={`block px-4 py-2 text-sm transition-colors ${
-                            pathname === child.href
-                              ? "text-ink font-medium bg-surface-soft"
-                              : "text-muted hover:text-ink hover:bg-surface-soft"
-                          }`}
-                        >
-                          {child.label}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              ) : (
-                <Link
-                  href={item.href}
-                  className={`block px-3 py-2 text-sm font-medium rounded-md transition-colors ${
-                    pathname === item.href
-                      ? "text-ink bg-surface-card"
-                      : "text-muted hover:text-ink hover:bg-surface-soft"
-                  }`}
-                >
-                  {item.label}
-                </Link>
-              )}
-            </li>
-          ))}
-        </ul>
+        {/* Desktop */}
+        <div className="hidden md:flex items-center gap-4">
+          <Link
+            href="/resume"
+            className={`text-sm font-medium px-3 py-2 rounded-md transition-colors ${
+              pathname === "/resume"
+                ? "text-ink bg-surface-card"
+                : "text-muted hover:text-ink hover:bg-surface-soft"
+            }`}
+          >
+            Resume
+          </Link>
+          <Link
+            href="/contact"
+            className="inline-flex items-center gap-2 bg-primary text-on-primary text-sm font-medium px-4 py-2 rounded-lg hover:bg-primary-active transition-colors"
+          >
+            Contact
+          </Link>
+        </div>
 
         {/* Mobile hamburger */}
         <button
@@ -180,103 +66,25 @@ export default function Navigation() {
           onClick={() => setMobileOpen((o) => !o)}
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
           aria-expanded={mobileOpen}
-          aria-controls="mobile-menu"
         >
           {mobileOpen ? <X size={20} /> : <Menu size={20} />}
         </button>
       </nav>
 
-      {/* Mobile Menu */}
       {mobileOpen && (
-        <div
-          id="mobile-menu"
-          className="md:hidden bg-canvas border-t border-hairline px-6 py-4"
-          aria-label="Mobile navigation"
-        >
-          <ul className="space-y-1" role="list">
-            {navItems.map((item) => (
-              <li key={item.href}>
-                {item.children ? (
-                  <>
-                    <div className="flex items-center rounded-md">
-                      {item.groupOnly ? (
-                        <button
-                          onClick={() =>
-                            setMobileExpanded(
-                              mobileExpanded === item.label ? null : item.label
-                            )
-                          }
-                          className="flex-1 px-3 py-2 text-sm font-medium rounded-l-md text-left transition-colors text-muted hover:text-ink"
-                        >
-                          {item.label}
-                        </button>
-                      ) : (
-                      <Link
-                        href={item.href}
-                        className={`flex-1 px-3 py-2 text-sm font-medium rounded-l-md transition-colors ${
-                          pathname.startsWith(item.href)
-                            ? "text-ink bg-surface-card"
-                            : "text-muted hover:text-ink"
-                        }`}
-                      >
-                        {item.label}
-                      </Link>
-                      )}
-                      <button
-                        onClick={() =>
-                          setMobileExpanded(
-                            mobileExpanded === item.label ? null : item.label
-                          )
-                        }
-                        className={`px-3 py-2 text-sm rounded-r-md transition-colors ${
-                          pathname.startsWith(item.href)
-                            ? "text-ink bg-surface-card"
-                            : "text-muted hover:text-ink"
-                        }`}
-                        aria-label={`Expand ${item.label}`}
-                      >
-                        <ChevronDown
-                          size={14}
-                          className={`transition-transform duration-200 ${
-                            mobileExpanded === item.label ? "rotate-180" : ""
-                          }`}
-                        />
-                      </button>
-                    </div>
-                    {mobileExpanded === item.label && (
-                      <ul className="ml-4 mt-1 space-y-1" role="list">
-                        {item.children.map((child) => (
-                          <li key={child.href}>
-                            <Link
-                              href={child.href}
-                              className={`block px-3 py-1.5 text-sm rounded-md transition-colors ${
-                                pathname === child.href
-                                  ? "text-ink font-medium"
-                                  : "text-muted hover:text-ink"
-                              }`}
-                            >
-                              {child.label}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </>
-                ) : (
-                  <Link
-                    href={item.href}
-                    className={`block px-3 py-2 text-sm font-medium rounded-md transition-colors ${
-                      pathname === item.href
-                        ? "text-ink bg-surface-card"
-                        : "text-muted hover:text-ink"
-                    }`}
-                  >
-                    {item.label}
-                  </Link>
-                )}
-              </li>
-            ))}
-          </ul>
+        <div className="md:hidden bg-canvas border-t border-hairline px-6 py-4 space-y-1">
+          <Link
+            href="/resume"
+            className="block px-3 py-2 text-sm font-medium rounded-md text-muted hover:text-ink hover:bg-surface-soft transition-colors"
+          >
+            Resume
+          </Link>
+          <Link
+            href="/contact"
+            className="block px-3 py-2 text-sm font-medium rounded-md text-muted hover:text-ink hover:bg-surface-soft transition-colors"
+          >
+            Contact
+          </Link>
         </div>
       )}
     </header>
