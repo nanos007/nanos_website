@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://georgisnanos.com";
+  const base = "https://www.nanos.work";
 
   return [
     { url: base, lastModified: new Date(), changeFrequency: "monthly", priority: 1 },
