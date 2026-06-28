@@ -40,7 +40,7 @@ const education = [
   { degree: "Dipl.-Ing. Electrical Engineering", institution: "RWTH Aachen", logo: "/images/logos/rwth-aachen.png", period: "2000–2004", note: "Thesis Grade: 1.3" },
   { degree: "Leadership and Communication — Professional Certificate", institution: "Harvard University", logo: "/images/logos/harvard.png", period: "2024", note: "Online" },
   { degree: "Digital Transformation & Innovation Certificate", institution: "INSEAD", logo: "/images/logos/insead.png", period: "2019", note: "Athens" },
-  { degree: "MBA", institution: "FOM University", logo: "/images/logos/fom.png", period: "2010–2012", note: "Thesis Grade: 1.0" },
+  { degree: "MBA", institution: "FOM University", logo: "/images/logos/fom.png", period: "2010–2012", note: "Finance Grade: 1.0" },
 ];
 
 export default function VPPage() {
