@@ -30,18 +30,17 @@ const competencies = [
 
 const roles = [
   { title: "Principal Project Manager", company: "Thales", period: "01/2025 – Present", location: "Kiel, Germany", note: "Defense systems program management." },
-  { title: "Principal Consultant & Project Manager", company: "digitalsalt", period: "07/2022 – 12/2024", location: "Germany", note: "Senior consulting across defense and maritime digitalization programs." },
-  { title: "Senior Consultant", company: "digitalsalt", period: "03/2020 – 06/2022", location: "Germany", note: "Naval and maritime systems consulting." },
-  { title: "Sales & Business Development Manager", company: "DNV", period: "04/2014 – 02/2020", location: "Hamburg, Germany", note: "Managed SEMEA region; quadrupled annual turnover; led large-scale maritime software bids." },
-  { title: "Senior Auditor", company: "ThyssenKrupp AG", period: "12/2011 – 03/2014", location: "Essen, Germany", note: "Operational, financial, and compliance audits across international defense subsidiaries." },
+  { title: "Principal Consultant", company: "digitalsalt", period: "03/2020 – 12/2024", location: "Germany", note: "Senior consulting across defense and maritime digitalization programs; naval systems, digital transformation." },
+  { title: "Regional Sales Manager EMEA", company: "DNV", period: "04/2014 – 02/2020", location: "Hamburg, Germany", note: "Managed EMEA region; quadrupled annual turnover; led large-scale maritime software bids." },
+  { title: "Senior Auditor — Defense", company: "ThyssenKrupp AG", period: "12/2011 – 03/2014", location: "Essen, Germany", note: "Operational, financial, and compliance audits across international defense subsidiaries." },
   { title: "Systems Engineer & Project Manager", company: "ThyssenKrupp Marine Systems", period: "03/2006 – 11/2011", location: "Kiel, Germany", note: "Functional integration and project management for underwater naval systems." },
 ];
 
 const education = [
-  { degree: "Dipl.-Ing. Electrical Engineering & IT", institution: "RWTH Aachen University", logo: "/images/logos/rwth-aachen.png", period: "1999–2004", note: "Grade: 1.3 (excellent)" },
+  { degree: "Dipl.-Ing. Electrical Engineering & IT", institution: "RWTH Aachen University", logo: "/images/logos/rwth-aachen.png", period: "1999–2004", note: "Diploma Thesis Grade: 1.3 (excellent)" },
   { degree: "Leadership and Communication — Professional Certificate", institution: "Harvard University", logo: "/images/logos/harvard.png", period: "2024", note: "Online" },
   { degree: "Digital Transformation & Innovation Certificate", institution: "INSEAD", logo: "/images/logos/insead.png", period: "2019", note: "Athens" },
-  { degree: "Master of Business Administration (MBA)", institution: "FOM University", logo: "/images/logos/fom.png", period: "2010–2012", note: "Grade: 1.0 (excellent)" },
+  { degree: "Master of Business Administration (MBA)", institution: "FOM University", logo: "/images/logos/fom.png", period: "2010–2012", note: "Master Thesis Grade: 1.0 (excellent)" },
 ];
 
 export default function VPPage() {
