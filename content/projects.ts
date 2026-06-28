@@ -10,7 +10,7 @@ export interface ConsultingProject {
 export interface AIProject {
   id: string;
   title: string;
-  effort: string;
+  type: string;
   description: string;
   links?: { label: string; url: string }[];
 }
@@ -86,7 +86,7 @@ export const aiProjects: AIProject[] = [
   {
     id: "ci-identification",
     title: "CI-Identification",
-    effort: "750 man-hours",
+    type: "AI · Classification",
     description:
       "Initial AI use case idea that grew into a digital solution built by the Data Science Team at digitalsalt under my leadership for a major shipyard. Automates the identification of Configuration Items.",
     links: [
@@ -100,7 +100,7 @@ export const aiProjects: AIProject[] = [
   {
     id: "cv-analyzer",
     title: "CV Analyzer",
-    effort: "60 man-hours",
+    type: "AI · HR",
     description:
       "Internal project completed during student work with Data Science Team support. Automates CV screening and candidate matching.",
     links: [
@@ -113,14 +113,14 @@ export const aiProjects: AIProject[] = [
   {
     id: "meeting-summarizer",
     title: "Meeting Summarizer",
-    effort: "30 man-hours",
+    type: "AI · Audio",
     description:
       "Processes audio from meetings, generates summaries and automated task lists. Discontinued after mature market alternatives emerged.",
   },
   {
     id: "data-copilot",
     title: "Data CoPilot",
-    effort: "150 man-hours",
+    type: "LLM · Chatbot",
     description:
       "Chatbot tool providing chat functionality with publicly available standards and technical documents, enabling instant expert-level queries.",
     links: [
@@ -133,7 +133,7 @@ export const aiProjects: AIProject[] = [
   {
     id: "ntt-training",
     title: "NTT Data Training",
-    effort: "200 man-hours",
+    type: "AI · Training",
     description:
       "AI training development for NTT DACH branch — a global telecommunications organization with 305,000 employees.",
     links: [
@@ -146,7 +146,7 @@ export const aiProjects: AIProject[] = [
   {
     id: "ds-power-search",
     title: "ds Power Search",
-    effort: "350 man-hours",
+    type: "AI · Search",
     description:
       "Data search tool for a newly launched claims management initiative in Melbourne — enabling rapid document discovery across large datasets.",
     links: [],
@@ -154,7 +154,7 @@ export const aiProjects: AIProject[] = [
   {
     id: "kickstart-sw",
     title: "Kickstart Your SW Development",
-    effort: "60 man-hours",
+    type: "AI · DevTools",
     description:
       "Uses AI to accelerate software development through task streamlining and efficiency improvements — reducing project initiation time significantly.",
     links: [
@@ -167,7 +167,7 @@ export const aiProjects: AIProject[] = [
   {
     id: "ml-architecture",
     title: "IT Architecture to Support ML",
-    effort: "Planned",
+    type: "ML · Architecture",
     description:
       "Infrastructure concept for supporting Machine Learning activities in large organizations — defining compute, storage, data pipeline, and governance requirements.",
     links: [
