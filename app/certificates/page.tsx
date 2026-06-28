@@ -30,17 +30,17 @@ const hubCards = [
 
 const featuredCerts = [
   { name: "Dipl.-Ing. EE&IT", institution: "RWTH Aachen", logo: "/images/logos/rwth-aachen.png" },
-  { name: "MBA", institution: "FOM University", logo: "/images/logos/fom.png" },
-  {
-    name: "Leading Digital Transformation",
-    institution: "INSEAD",
-    logo: "/images/logos/insead.png",
-  },
   {
     name: "Leadership & Communication",
     institution: "Harvard University",
     logo: "/images/logos/harvard.png",
   },
+  {
+    name: "Leading Digital Transformation",
+    institution: "INSEAD",
+    logo: "/images/logos/insead.png",
+  },
+  { name: "MBA", institution: "FOM University", logo: "/images/logos/fom.png" },
 ];
 
 export default function CertificatesPage() {
