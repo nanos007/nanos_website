@@ -7,10 +7,10 @@ const current = [
 ];
 
 const previous = [
-  { name: "TKMS", logo: "/images/logos/tkms.svg", url: "https://www.thyssenkrupp-marinesystems.com", w: 120, h: 40 },
-  { name: "digitalsalt", logo: "/images/logos/digitalsalt.png", url: "https://www.digitalsalt.de", w: 120, h: 40 },
-  { name: "DNV", logo: "/images/logos/dnv.png", url: "https://www.dnv.com", w: 80, h: 40 },
-  { name: "ThyssenKrupp", logo: "/images/logos/thyssenkrupp.png", url: "https://www.thyssenkrupp.com", w: 140, h: 40 },
+  { name: "digitalsalt", logo: "/images/logos/digitalsalt.png", url: "https://www.digitalsalt.de", w: 100, h: 32 },
+  { name: "DNV", logo: "/images/logos/dnv.png", url: "https://www.dnv.com", w: 70, h: 32 },
+  { name: "ThyssenKrupp", logo: "/images/logos/thyssenkrupp.png", url: "https://www.thyssenkrupp.com", w: 120, h: 32 },
+  { name: "TKMS", logo: "/images/logos/tkms.svg", url: "https://www.thyssenkrupp-marinesystems.com", w: 80, h: 28 },
 ];
 
 interface Client {
@@ -110,7 +110,7 @@ export default function EmployerLogos() {
                   className="opacity-50 hover:opacity-80 transition-opacity grayscale hover:grayscale-0"
                   aria-label={emp.name}
                 >
-                  <Image src={emp.logo} alt={emp.name} width={emp.w} height={emp.h} className="object-contain h-10 w-auto" />
+                  <Image src={emp.logo} alt={emp.name} width={emp.w} height={emp.h} style={{ height: emp.h, width: "auto" }} className="object-contain" />
                 </a>
               ))}
             </div>
