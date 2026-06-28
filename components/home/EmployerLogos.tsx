@@ -35,7 +35,7 @@ const maritimeClients: Client[] = [
   { name: "Latsco", url: "https://www.latsco.com", logo: "/images/logos/clients/latsco.svg" },
   { name: "Laskaridis Maritime", url: "https://www.laskaridis.com", logo: "/images/logos/clients/laskaridis.svg", badgeWithText: true },
   { name: "Maran Tankers", url: "https://www.marantankers.com", logo: "/images/logos/clients/maran.png" },
-  { name: "Columbia Shipmanagement", url: "https://columbiagroup.org/ship-management-services/" },
+  { name: "Columbia Shipmanagement", url: "https://columbiagroup.org/ship-management-services/", logo: "/images/logos/clients/columbia.jpg" },
   { name: "Nakilat", url: "https://www.nakilat.com", logo: "/images/logos/clients/nakilat.svg" },
   { name: "ADNOC Shipping", url: "https://www.adnocshipping.ae" },
 ];
