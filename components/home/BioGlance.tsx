@@ -44,54 +44,6 @@ export default function BioGlance() {
           </FadeIn>
         </div>
       </SectionBand>
-
-      {/* Naval AI & DEEPDOCK */}
-      <SectionBand dark id="deepdock">
-        <div className="max-w-3xl">
-          <FadeIn>
-            <p className="text-xs font-medium tracking-widest uppercase text-on-dark-soft mb-4">
-              Research Initiative
-            </p>
-            <h2
-              className="font-display text-4xl font-normal text-on-dark mb-8"
-              style={{ letterSpacing: "-0.5px" }}
-            >
-              Naval AI &amp; Autonomy
-            </h2>
-          </FadeIn>
-          <FadeIn delay={0.1}>
-            <div className="space-y-4 text-on-dark-soft leading-relaxed mb-8">
-              <p>
-                Exploring artificial intelligence enabling autonomous behavior in maritime
-                environments. Work focuses on surface and underwater systems combining perception,
-                decision-making, and control.
-              </p>
-              <p>
-                A research-driven, non-commercial initiative called{" "}
-                <a
-                  href="http://www.deepdock.xyz"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-accent-teal hover:text-on-dark transition-colors"
-                >
-                  DEEPDOCK
-                </a>{" "}
-                — centered on autonomous maritime systems, conducted during free time since 1999.
-              </p>
-            </div>
-          </FadeIn>
-          <FadeIn delay={0.2}>
-            <a
-              href="http://www.deepdock.xyz"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-surface-dark-elevated text-on-dark text-sm font-medium px-5 py-2.5 rounded-lg hover:bg-surface-dark-soft transition-colors border border-surface-dark-soft"
-            >
-              Visit DEEPDOCK →
-            </a>
-          </FadeIn>
-        </div>
-      </SectionBand>
     </>
   );
 }

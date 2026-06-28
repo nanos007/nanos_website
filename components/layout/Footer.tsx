@@ -22,8 +22,7 @@ const footerLinks = {
   Connect: [
     { label: "Contact", href: "/contact" },
     { label: "LinkedIn", href: "https://de.linkedin.com/in/georgios-nanos-7048b25a", external: true },
-    { label: "DEEPDOCK", href: "http://www.deepdock.xyz", external: true },
-    { label: "Disclaimer", href: "/disclaimer" },
+{ label: "Disclaimer", href: "/disclaimer" },
   ],
 };
 
