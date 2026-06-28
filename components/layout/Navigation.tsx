@@ -66,10 +66,10 @@ export default function Navigation() {
         <Link
           href="/"
           className="font-display text-lg font-medium text-ink hover:text-primary transition-colors"
-          aria-label="George Nanos — Home"
+          aria-label="Georgios Nanos — Home"
         >
           <span className="text-accent-steel">◆</span>{" "}
-          <span>George Nanos</span>
+          <span>Georgios Nanos</span>
         </Link>
 
         {/* Desktop Nav */}

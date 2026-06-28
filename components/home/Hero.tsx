@@ -42,7 +42,7 @@ export default function Hero() {
             className="font-display text-5xl md:text-6xl font-normal leading-tight text-ink mb-6"
             style={{ letterSpacing: "-1.5px" }}
           >
-            George
+            Georgios
             <br />
             Nanos
           </motion.h1>
@@ -99,7 +99,7 @@ export default function Hero() {
           <div className="relative rounded-2xl overflow-hidden bg-surface-card aspect-[3/4]">
             <Image
               src="/images/hero-george-nanos.jpg"
-              alt="George Nanos standing in front of a Tesla Cybertruck"
+              alt="Georgios Nanos standing in front of a Tesla Cybertruck"
               fill
               className="object-cover"
               priority

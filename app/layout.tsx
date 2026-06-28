@@ -20,8 +20,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "George Nanos — Defense Expert",
-    template: "%s — George Nanos",
+    default: "Georgios Nanos — Defense Expert",
+    template: "%s — Georgios Nanos",
   },
   description:
     "Personal website of Georgios Nanos — Dipl.-Ing. EE&IT, MBA, Defense & Maritime expert, Principal Project Manager at Thales, and founder of the DEEPDOCK autonomous naval systems research initiative.",
@@ -29,14 +29,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "George Nanos",
-    title: "George Nanos — Defense Expert",
+    siteName: "Georgios Nanos",
+    title: "Georgios Nanos — Defense Expert",
     description:
       "20+ years across Digital Solutions, Shipbuilding, Maritime, and Defense. Exploring the future of Naval AI & Autonomy.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "George Nanos — Defense Expert",
+    title: "Georgios Nanos — Defense Expert",
     description:
       "20+ years across Digital Solutions, Shipbuilding, Maritime, and Defense. Exploring the future of Naval AI & Autonomy.",
   },

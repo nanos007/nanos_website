@@ -6,7 +6,7 @@ import SolonQuote from "@/components/home/SolonQuote";
 import CTACards from "@/components/home/CTACards";
 
 export const metadata: Metadata = {
-  title: "George Nanos — Defense Expert",
+  title: "Georgios Nanos — Defense Expert",
   description:
     "Personal website of Georgios Nanos — Dipl.-Ing. EE&IT, MBA, Defense & Maritime expert, Principal Project Manager at Thales, and founder of the DEEPDOCK autonomous naval systems research initiative.",
 };

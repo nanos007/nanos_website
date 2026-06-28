@@ -34,7 +34,7 @@ export default function Footer() {
         {/* Top: Wordmark + tagline */}
         <div className="mb-12 pb-8 border-b border-surface-dark-elevated">
           <p className="font-display text-2xl text-on-dark mb-2">
-            <span className="text-accent-steel">◆</span> George Nanos
+            <span className="text-accent-steel">◆</span> Georgios Nanos
           </p>
           <p className="text-sm text-on-dark-soft">Defense Expert · Naval AI Researcher · MBA</p>
         </div>
