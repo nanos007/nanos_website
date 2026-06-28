@@ -24,7 +24,7 @@ export default function Footer() {
       <div className="max-w-5xl mx-auto px-6 md:px-12 py-16">
         {/* Top: Wordmark + tagline */}
         <div className="mb-12 pb-8 border-b border-surface-dark-elevated">
-          <p className="font-display text-xl text-on-dark mb-2">
+          <p className="font-display text-lg text-on-dark mb-2">
             <span className="text-accent-steel">◆</span> Georgios&nbsp;Nanos
           </p>
           <p className="text-sm text-on-dark-soft">Defense Expert · Naval AI Researcher · MBA</p>
