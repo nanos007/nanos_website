@@ -20,9 +20,9 @@ export const education: EducationEntry[] = [
     institution: "RWTH Aachen University",
     institutionUrl: "https://www.rwth-aachen.de/",
     location: "Aachen, Germany",
-    startYear: "1999",
+    startYear: "2000",
     endYear: "2004",
-    duration: "5 yrs",
+    duration: "4 yrs",
     details:
       'Thesis: "Classification, Analytical Modelling and Performance Evaluation of Mobile Web-Services". Supervised by Prof. Dr.-Ing. B. Walke, Dr.-Ing. Guido Gehlen.',
     grade: "1.3 (excellent)",
