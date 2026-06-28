@@ -8,7 +8,7 @@ export default function VPBio() {
         <FadeIn>
           <p className="text-xs font-medium tracking-widest uppercase text-muted mb-4">Background</p>
           <h2 className="font-display text-4xl font-normal text-ink mb-8" style={{ letterSpacing: "-0.5px" }}>
-            Data-driven leader. Creative engineer.
+            Data-driven leader.
           </h2>
         </FadeIn>
         <FadeIn delay={0.1}>

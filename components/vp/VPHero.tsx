@@ -30,7 +30,7 @@ export default function VPHero() {
             Georgios Nanos
           </motion.h1>
           <motion.p variants={itemVariants} className="text-base text-body leading-relaxed mb-8 max-w-md">
-            Dipl.-Ing. · MBA · 20+ years leading defense, naval, and maritime programs across Europe and the Middle East.
+            Dipl.-Ing. · MBA · 20+ years leading defense, naval, and maritime programs internationally.
           </motion.p>
           <motion.div variants={itemVariants} className="flex flex-wrap gap-3">
             <Link href="/contact" className="inline-flex items-center gap-2 bg-primary text-on-primary text-sm font-medium px-5 py-2.5 rounded-lg hover:bg-primary-active transition-colors">
@@ -42,9 +42,10 @@ export default function VPHero() {
           </motion.div>
         </motion.div>
 
-        <motion.div initial={prefersReducedMotion ? {} : { opacity: 0, scale: 0.96 }} animate={prefersReducedMotion ? {} : { opacity: 1, scale: 1 }} transition={{ duration: 0.9, delay: 0.3, ease: EASE }}>
+        <motion.div initial={prefersReducedMotion ? {} : { opacity: 0, scale: 0.96 }} animate={prefersReducedMotion ? {} : { opacity: 1, scale: 1 }} transition={{ duration: 0.9, delay: 0.3, ease: EASE }}
+          className="w-[140px] md:w-full mx-auto">
           <div className="relative rounded-2xl overflow-hidden bg-surface-card aspect-[3/4]">
-            <Image src="/images/hero-george-nanos.jpg" alt="Georgios Nanos" fill className="object-cover" priority sizes="200px" />
+            <Image src="/images/hero-george-nanos.jpg" alt="Georgios Nanos" fill className="object-cover" priority sizes="(max-width: 768px) 140px, 200px" />
           </div>
         </motion.div>
       </div>
