@@ -39,8 +39,19 @@ export default function ToolsPage() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {businessTools.map((tool, i) => (
             <FadeIn key={tool.id} delay={i * 0.05}>
-              <div className="bg-canvas border border-hairline rounded-xl p-6 h-full">
-                <h2 className="font-sans text-sm font-medium text-ink mb-3">{tool.name}</h2>
+              <div className="bg-canvas border border-hairline rounded-xl p-6 h-full relative">
+                {tool.tag && (
+                  <span className={`absolute top-4 right-4 text-[10px] font-semibold tracking-widest uppercase px-2 py-0.5 rounded-full ${
+                    tool.tag === "INSEAD"
+                      ? "bg-accent-teal/15 text-accent-teal"
+                      : tool.tag === "MBA"
+                      ? "bg-primary/10 text-primary"
+                      : "bg-accent-amber/15 text-accent-amber"
+                  }`}>
+                    {tool.tag}
+                  </span>
+                )}
+                <h2 className="font-sans text-sm font-medium text-ink mb-3 pr-14">{tool.name}</h2>
                 <p className="text-sm text-body leading-relaxed">{tool.description}</p>
               </div>
             </FadeIn>

@@ -9,6 +9,7 @@ export interface BusinessTool {
   id: string;
   name: string;
   description: string;
+  tag?: "INSEAD" | "MBA" | "RWTH";
 }
 
 export const softSkills: SoftSkill[] = [
@@ -60,72 +61,84 @@ export const businessTools: BusinessTool[] = [
   {
     id: "innovators-method",
     name: "Innovator's Method",
+    tag: "INSEAD",
     description:
       "Framework for developing new products and services under uncertainty, integrating lean startup and design thinking principles with stages: problem understanding, solution hypothesis, prototyping, piloting, and scaling.",
   },
   {
     id: "arc-framework",
     name: "ARC Framework",
+    tag: "INSEAD",
     description:
       "Digital transformation blueprint addressing Architecture (infrastructure and structures), Routines (daily practices and processes), and Culture (beliefs and values). Learned at INSEAD.",
   },
   {
     id: "usp",
     name: "Unique Selling Proposition (USP)",
+    tag: "MBA",
     description:
       "Method for identifying and communicating distinctive advantages that differentiate a brand from competitors while resonating with target audiences.",
   },
   {
     id: "gap-analysis",
     name: "Gap Analysis",
+    tag: "MBA",
     description:
       "Foundational consulting tool comparing the current organizational state against the desired future state to identify discrepancies and craft bridging strategies.",
   },
   {
     id: "swot",
     name: "SWOT Analysis",
+    tag: "MBA",
     description:
       "Strategic assessment examining Strengths, Weaknesses, Opportunities, and Threats to provide a comprehensive organizational positioning perspective.",
   },
   {
     id: "porters-five-forces",
     name: "Porter's Five Forces",
+    tag: "MBA",
     description:
       "Competitive landscape framework analyzing: threat of new entrants, supplier bargaining power, buyer bargaining power, threat of substitutes, and competitor rivalry intensity.",
   },
   {
     id: "bcg-matrix",
     name: "BCG Matrix",
+    tag: "MBA",
     description:
       "Product portfolio analysis tool plotting business units by market growth and relative market share across four quadrants: Stars, Cash Cows, Question Marks, and Dogs.",
   },
   {
     id: "pestel",
     name: "PESTEL Analysis",
+    tag: "MBA",
     description:
       "Macro-environmental assessment examining Political, Economic, Social, Technological, Environmental, and Legal factors shaping the business landscape.",
   },
   {
     id: "value-chain",
     name: "Value Chain Analysis",
+    tag: "RWTH",
     description:
       "Operations framework identifying value-adding activities through primary activities (inbound logistics, operations, outbound logistics, marketing/sales, service) and support activities.",
   },
   {
     id: "balanced-scorecard",
     name: "Balanced Scorecard",
+    tag: "MBA",
     description:
       "Performance measurement system balancing Financial, Customer, Internal Process, and Learning & Growth perspectives to align strategy with execution.",
   },
   {
     id: "resource-management",
     name: "Resource Management",
+    tag: "MBA",
     description:
       "Allocation methodologies including FIFO, LIFO, FILO, and FCFS for inventory, network, and task scheduling optimization.",
   },
   {
     id: "cba",
     name: "Cost-Benefit Analysis (CBA)",
+    tag: "RWTH",
     description:
       "Decision-making framework quantifying costs and benefits with NPV calculations to guide resource allocation and investment decisions.",
   },
