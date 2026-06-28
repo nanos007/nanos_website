@@ -226,7 +226,7 @@ export const career: CareerEntry[] = [
     id: "hsy",
     role: "Student Trainee",
     company: "Hellenic Shipyards (HSY)",
-    companyUrl: "https://hsy-under-special-administration.gr/?lang=en",
+    companyUrl: "https://skaramangas.gr/",
     location: "Athens",
     countries: ["GR"],
     startDate: "04/1999",
