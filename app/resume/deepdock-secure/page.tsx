@@ -80,14 +80,6 @@ export default function DeepDockSecurePage() {
               >
                 DEEPDOCK Website <ExternalLink size={14} />
               </a>
-              <a
-                href="https://miro.com/app/board/uXjVMkRiGs4=/?share_link_id=41279702423"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-surface-dark-elevated text-on-dark text-sm font-medium px-5 py-2.5 rounded-lg hover:bg-surface-dark-soft transition-colors border border-surface-dark-soft"
-              >
-                Ideation Board (Miro) <ExternalLink size={14} />
-              </a>
             </div>
           </FadeIn>
         </div>
